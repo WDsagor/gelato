@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import TopNavbar from "@/Components/Share/TopNavbar";
+import CenterNavbar from "@/Components/Share/CenterNavbar";
 
 const gelatoSans = localFont({
   src: "./fonts/GelatoSans-Regular.woff",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${gelatoSans.variable}  antialiased`}>
         <TopNavbar />
+        <CenterNavbar />
         <main>{children}</main>
       </body>
     </html>

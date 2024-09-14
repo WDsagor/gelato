@@ -8,7 +8,7 @@ const TopNavbar = () => {
         FREE SHIPPING for orders over $300. Order today
         <span className="group relative flex max-w-max flex-col items-center justify-center">
           <HiOutlineExclamationCircle
-            className="inline-flex  text-center font-medium rotate-180"
+            className="inline-flex cursor-pointer  text-center font-medium rotate-180"
             size={22}
           />
           <div className="absolute left-1/2 top-4 ml-auto mr-auto min-w-max -translate-x-1/2 invisible transform rounded-lg px-3 py-2  font-medium transition-all  group-hover:visible">
