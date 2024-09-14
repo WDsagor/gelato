@@ -19,7 +19,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.clip-bottom {
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
