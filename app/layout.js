@@ -20,7 +20,9 @@ export default function RootLayout({ children }) {
       <body className={`${gelatoSans.variable}  antialiased`}>
         <TopNavbar />
         <CenterNavbar />
-        <main>{children}</main>
+        <main className="max-w-screen-lg  xl:max-w-screen-xl mx-auto">
+          {children}
+        </main>
       </body>
     </html>
   );

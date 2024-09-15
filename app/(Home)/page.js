@@ -1,9 +1,10 @@
 import React from "react";
+import PrintDemandSection from "./PrintDemandSection";
 
 const page = () => {
   return (
     <section>
-      <h1 className="text-6xl">Home page 1</h1>
+      <PrintDemandSection />
     </section>
   );
 };

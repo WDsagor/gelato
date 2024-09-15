@@ -8,7 +8,7 @@ import { FaUserAlt } from "react-icons/fa";
 const CenterNavbar = () => {
   return (
     <section className="py-2 border border-b-[1px]">
-      <div className="px-3 navbar flex flex-row justify-between justify-items-center md:px-1 max-w-screen-xl w-full mx-auto">
+      <div className="px-10 md:px-3 navbar flex flex-row justify-between justify-items-center max-w-screen-lg xl:max-w-screen-xl w-full mx-auto">
         <Link href={"/"}>
           <Image
             src={"/gelato_logo_black.svg"}
