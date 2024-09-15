@@ -5,21 +5,46 @@ import { BsHeadset } from "react-icons/bs";
 import { HiShoppingCart } from "react-icons/hi2";
 import { IoGlobeOutline } from "react-icons/io5";
 import { FaUserAlt } from "react-icons/fa";
+import Sidebar from "./Sidebar";
 const CenterNavbar = () => {
   return (
-    <section className="py-2 border border-b-[1px]">
+    <section className="py-2 border-b-[1px] sticky top-0 bg-white z-10">
+      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="px-10 md:px-3 navbar flex flex-row justify-between justify-items-center max-w-screen-lg xl:max-w-screen-xl w-full mx-auto">
-        <Link href={"/"}>
-          <Image
-            src={"/gelato_logo_black.svg"}
-            width={150}
-            height={80}
-            alt="logo"
-          />
-        </Link>
+        <div>
+          <div className="flex-none lg:hidden">
+            <label
+              htmlFor="my-drawer-3"
+              aria-label="open sidebar"
+              className="btn btn-square btn-ghost"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="inline-block h-6 w-6 stroke-current"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </label>
+          </div>
+          <Link href={"/"}>
+            <Image
+              src={"/gelato_logo_black.svg"}
+              width={150}
+              height={80}
+              alt="logo"
+            />
+          </Link>
+        </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 gap-1">
-            <li>
+            <li className=" hidden lg:flex">
               <Link
                 className=" btn font-semibold btn-sm rounded-3xl items-center"
                 href={"/contact-us"}
@@ -28,7 +53,7 @@ const CenterNavbar = () => {
                 <button>Contact us</button>
               </Link>
             </li>
-            <li>
+            <li className=" hidden md:flex">
               <details>
                 <summary className=" pt-1 btn font-semibold btn-sm rounded-3xl items-center  ">
                   <IoGlobeOutline size={25} />
@@ -44,7 +69,7 @@ const CenterNavbar = () => {
                 </ul>
               </details>
             </li>
-            <li>
+            <li className=" hidden md:flex">
               <Link
                 className=" btn font-semibold btn-sm rounded-3xl items-center"
                 href={"/contact-us"}
@@ -53,7 +78,7 @@ const CenterNavbar = () => {
                 <button>Cart</button>
               </Link>
             </li>
-            <li>
+            <li className=" hidden lg:flex">
               <Link
                 className=" btn font-semibold btn-sm rounded-3xl items-center"
                 href={"/contact-us"}
@@ -73,6 +98,7 @@ const CenterNavbar = () => {
           </ul>
         </div>
       </div>
+      <Sidebar />
     </section>
   );
 };

@@ -6,7 +6,7 @@ import { HiShoppingCart } from "react-icons/hi2";
 
 const PrintDemandSection = () => {
   return (
-    <section className="flex items-center flex-col gap-4 md:flex-row-reverse px-5 py-10">
+    <section className="flex w-full items-center flex-col gap-4 md:flex-row-reverse px-5 py-10">
       <Image
         className="lg:w-full"
         src={"/download.webp"}
@@ -15,7 +15,7 @@ const PrintDemandSection = () => {
         alt="Print Demand Image"
       />
       <div>
-        <h1 className="text-6xl leading-tight font-bold py-10">
+        <h1 className=" text-4xl md:text-6xl leading-tight font-bold py-10">
           Print on demand for your ecommerce business
         </h1>
         <h3 className="text-2xl  py-5">
@@ -46,11 +46,11 @@ const PrintDemandSection = () => {
             <button className="">See our products</button>
           </Link>
         </div>
-        <div className="mt-10">
-          <h1 className="text-4xl items-end flex font-bold italic">
+        <div className="mt-10 ">
+          <h1 className="text-4xl items-end flex font-bold italic cursor-pointer">
             <FaShopify size={50} /> shopify{" "}
           </h1>
-          <p className="font-light">
+          <p className="font-light hover:text-slate-400">
             <span className="rating">
               <input
                 type="radio"
