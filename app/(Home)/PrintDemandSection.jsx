@@ -6,7 +6,7 @@ import { HiShoppingCart } from "react-icons/hi2";
 
 const PrintDemandSection = () => {
   return (
-    <section className="flex w-full items-center flex-col gap-4 md:flex-row-reverse px-5 py-10">
+    <section className="flex bg-orange-100/40 md:bg-white w-full items-center flex-col gap-4 md:flex-row-reverse px-5 py-10 max-w-screen-lg xl:max-w-screen-xl mx-auto">
       <Image
         className="lg:w-full"
         src={"/download.webp"}
@@ -32,7 +32,7 @@ const PrintDemandSection = () => {
           network.
         </p>
         {/* button area */}
-        <div className="flex flex-col lg:flex-row gap-2 mt-10 max-w-52">
+        <div className="flex flex-row md:flex-col lg:flex-row gap-2 mt-10 max-w-52">
           <Link
             className=" btn hover:bg-black hover:text-white/50 bg-black text-white font-semibold  rounded-3xl items-center"
             href={"/contact-us"}

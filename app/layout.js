@@ -20,13 +20,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${gelatoSans.variable}  antialiased`}>
         <TopNavbar />
-        <nav className="sticky top-0">
+        <nav className="sticky top-0 z-30">
           <CenterNavbar />
           <MainMenu />
         </nav>
-        <main className="max-w-screen-lg w-full xl:max-w-screen-xl mx-auto">
-          {children}
-        </main>
+        <main>{children}</main>
       </body>
     </html>
   );
