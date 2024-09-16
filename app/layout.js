@@ -20,10 +20,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${gelatoSans.variable}  antialiased`}>
         <TopNavbar />
-        <nav className="sticky top-0 z-30">
+        <div className="sticky top-0 z-30">
           <CenterNavbar />
           <MainMenu />
-        </nav>
+        </div>
         <main>{children}</main>
       </body>
     </html>

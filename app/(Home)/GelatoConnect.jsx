@@ -10,7 +10,7 @@ const GelatoConnect = () => {
           <div className="">
             <h1 className="">For print producers</h1>
             <h1 className="text-3xl md:text-5xl font-bold leading-normal">
-              GelatoConnect
+              Gelato Connect
             </h1>
             <p className="text-2xl  py-5">
               Elevate efficiency, cut costs, and seamlessly automate with our
