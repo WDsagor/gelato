@@ -7,7 +7,7 @@ const DemandSellers = () => {
     <section className="bg-orange-100/40">
       <div className="max-w-screen-lg w-full px-4 xl:max-w-screen-xl mx-auto py-14">
         <div className="flex flex-col-reverse md:flex-row gap-10 items-center">
-          <div className=" basis-3/5">
+          <div className="flex-1">
             <h1 className="">For print on demand sellers</h1>
             <h1 className="text-3xl md:text-5xl font-bold leading-normal">
               Accelerate business growth with innovative design tools and apps
@@ -24,10 +24,10 @@ const DemandSellers = () => {
             </Link>
           </div>
           <Image
-            className="lg:w-full"
+            className="lg:w-full lg:max-w-2xl"
             src={"/download.gif"}
-            height={500}
-            width={500}
+            height={400}
+            width={400}
             alt="Demand seller"
           />
         </div>
