@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import TopNavbar from "@/Components/Share/Navbar/TopNavbar";
 import CenterNavbar from "@/Components/Share/Navbar/CenterNavbar";
+import MainMenu from "@/Components/Share/Navbar/Mainmenu";
 
 const gelatoSans = localFont({
   src: "./fonts/GelatoSans-Regular.woff",
@@ -19,7 +20,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${gelatoSans.variable}  antialiased`}>
         <TopNavbar />
-        <CenterNavbar />
+        <nav className="sticky top-0">
+          <CenterNavbar />
+          <MainMenu />
+        </nav>
         <main className="max-w-screen-lg w-full xl:max-w-screen-xl mx-auto">
           {children}
         </main>

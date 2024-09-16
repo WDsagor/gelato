@@ -5,11 +5,12 @@ import { FaUserAlt } from "react-icons/fa";
 import { HiShoppingCart } from "react-icons/hi2";
 import { IoGlobeOutline } from "react-icons/io5";
 import { MdClose } from "react-icons/md";
+import MenuItems from "../MenuItems";
 
 const Sidebar = () => {
   return (
-    <div className="drawer-side ">
-      <ul className="menu bg-base-100 min-h-full w-80 p-3 shadow-2xl">
+    <div className="drawer-side lg:hidden">
+      <ul className="bg-base-100 min-h-full w-80 p-3 shadow-2xl  ">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
 
         <div className="flex-none ">
@@ -67,12 +68,9 @@ const Sidebar = () => {
             </li>
           </ul>
         </div>
-        <li>
-          <a>Sidebar Item 1</a>
-        </li>
-        <li>
-          <a>Sidebar Item 2</a>
-        </li>
+        <div className="mt-4">
+          <MenuItems />
+        </div>
       </ul>
     </div>
   );

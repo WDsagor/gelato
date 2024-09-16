@@ -8,7 +8,7 @@ import { FaUserAlt } from "react-icons/fa";
 import Sidebar from "./Sidebar";
 const CenterNavbar = () => {
   return (
-    <section className="py-2 border-b-[1px] sticky top-0 bg-white z-10">
+    <section className="border-b-[1px]  bg-white z-10 ">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="px-10 md:px-3 navbar flex flex-row justify-between justify-items-center max-w-screen-lg xl:max-w-screen-xl w-full mx-auto">
         <div>
